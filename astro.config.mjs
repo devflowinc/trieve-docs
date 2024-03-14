@@ -3,12 +3,23 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://docs.trieve.ai",
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Trieve Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/devflowinc/trieve',
+				twitter: 'https://twitter.com/trieveai',
+				discord: 'https://discord.gg/jWdZc3XSWB',
+				matrix: 'https://matrix.to/#/#trieve-general:matrix.zerodao.gg',
 			},
+			logo: {
+				src: './src/assets/trieve-logo.png',
+				alt: 'Trieve Logo',
+			},
+			editLink: {
+        baseUrl: 'https://github.com/devflowinc/trieve-docs/edit/main',
+      },
 			sidebar: [
 				{
 					label: 'Guides',
