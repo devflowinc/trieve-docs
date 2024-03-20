@@ -2,8 +2,6 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from "@astrojs/tailwind";
 
-// FIX the code issue to add a navbar item to the top of the page
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://docs.trieve.ai",
