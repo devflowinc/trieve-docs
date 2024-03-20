@@ -1,0 +1,26 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/SocialIcons.astro';
+---
+
+<a href="https://api.trieve.ai/redoc" class = "nav-item">REST OpenAPI Docs</a>
+<Default {...Astro.props}><slot /></Default>
+
+<style>
+    .nav-item {
+        color: var(--color-text);
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        transition: text-shadow 0.3s ease; 
+        padding: 0.25rem 0.75rem;
+        border-radius: 10px;
+        font-weight: 500;
+        transition: background-color 0.5s ease;
+    }
+    
+    .nav-item:hover {
+        background-color: #a800be10;
+    }
+
+</style>
+
