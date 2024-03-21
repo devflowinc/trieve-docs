@@ -30,7 +30,7 @@ export default defineConfig({
       // Each item here is one entry in the navigation menu.
       {
         label: 'Example Guide',
-        link: '/guides/homepage/'
+        link: '/guides/guide/'
       }]
     }, {
       label: 'Reference',
