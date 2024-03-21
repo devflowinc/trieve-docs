@@ -1,34 +1,67 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-tableOfContents: false
-hero:
-  tagline: Congrats on setting up a new Starlight project!
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-      variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+title: Trieve Documentation
+description: A guide to getting started with Trieve.
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+Trieve is Infrastructure for building AI search into your applications.
 
-## Next steps
+:::tip[Did you know?]
+Trieve combines powerful language models with tools for human fine tuning. Get features like dense vector semantic search, sparse vector full-text search, cross encoder re-ranker models, RAG endpoints, relevance weighting, and more in a single service.
+:::
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+Get the most out of Trieve by following our guides and using our resources.
+
+**Things still unclear? Check out our live demos or [REST OpenAPI docs](https://api.trieve.ai/redoc).**
+
+We have public Trieve demos for for the YCombinator company directory and another for HN comments and posts coming soon!
+
+- **[YCombinator companies search](https://yc.trieve.ai/?q=open+source+EHR+software&search_type=hybrid&sort_by=relevance&batch_tag=all+batches)**
+- Search for HN comments and posts coming soon!
+
+### Getting started
+
+Get started immediately with hosted Trieve at **[dashboard.trieve.ai](https://dashboard.trieve.ai/)** or reach out to us for a SLA/SLO by emailing **[humans@trieve.ai](mailto:humans@trieve.ai)**.
+
+To engage with the Trieve community, preferably join our **[Matrix](https://matrix.to/#/#trieve-general:matrix.zerodao.gg)**, but we also have a **[Discord](https://discord.gg/7fmrXSvBfC)**.
+
+### Guides
+
+import { Card, LinkCard, CardGrid } from "@astrojs/starlight/components";
+
+<CardGrid>
+  <LinkCard
+    href="https://docs.trieve.ai/quickstart"
+    title="Quickstart"
+    description="Learn how to quickly get started with Trieve."
+  ></LinkCard>
+</CardGrid>
+
+## Resources
+
+<CardGrid>
+  <LinkCard
+    href="https://api.trieve.ai/redoc#tag/auth"
+    title="Auth"
+    description="Learn about how to authenticate with the Trieve API and how to use the access cookie and API key to make requests."
+  ></LinkCard>
+  <LinkCard
+    href="https://api.trieve.ai/redoc#tag/chunk"
+    title="Chunk"
+    description="Learn about the chunk model and how to create, retrieve, update, delete, and query chunks."
+  ></LinkCard>
+  <LinkCard
+    href="https://api.trieve.ai/redoc#tag/chunk_collection"
+    title="Collections"
+    description="Learn about the collection model and how to create, retrieve, update, delete, and list collections."
+  ></LinkCard>
+  <LinkCard
+    href="https://api.trieve.ai/redoc#tag/user"
+    title="User"
+    description="Learn about the user model and how to create, retrieve, update, and delete users and their associated info."
+  ></LinkCard>
+  <LinkCard
+    href="https://api.trieve.ai/redoc#tag/file"
+    title="File"
+    description="Learn about the file model and how to upload, retrieve, update, delete, and list files."
+  ></LinkCard>
 </CardGrid>
