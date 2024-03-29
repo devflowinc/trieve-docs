@@ -1,0 +1,27 @@
+---
+title: Example Reference
+description: A reference page in my new Starlight docs site.
+---
+
+Reference pages are ideal for outlining how things work in terse and clear terms.
+Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+
+## Multi-language code blocks
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<Tabs>
+  <TabItem label="JS" icon="">
+  ```js
+  function demo() {
+    return 'This is line #2 of this snippet';
+  }
+  ```
+  </TabItem>
+  <TabItem label="Python" icon="">
+    ```python
+    def demo() :
+      return 'This is line #2 of this snippet'
+    ```
+  </TabItem>
+</Tabs>
